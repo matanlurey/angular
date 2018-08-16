@@ -222,21 +222,21 @@ abstract class AppView<T> {
       viewData.projectableNodes;
 
   ComponentRef<T> create(
-    T context,
-    List<dynamic> givenProjectableNodes,
-  ) {
+          T context,
+          [@Deprecated('Use createAndProject instead')
+              List<dynamic> projectableNodes = const []]) =>
+      createAndProject(context, projectableNodes);
+
+  ComponentRef<T> createAndProject(T context, List<dynamic> projectableNodes) {
     ctx = context;
-    viewData.projectableNodes = givenProjectableNodes;
+    viewData.projectableNodes = projectableNodes;
     return build();
   }
 
   /// Builds host level view.
-  ComponentRef<T> createHostView(
-    Injector hostInjector,
-    List<dynamic> givenProjectableNodes,
-  ) {
+  ComponentRef<T> createHostView(Injector hostInjector) {
     viewData._hostInjector = hostInjector;
-    viewData.projectableNodes = givenProjectableNodes;
+    viewData.projectableNodes = const [];
     return build();
   }
 

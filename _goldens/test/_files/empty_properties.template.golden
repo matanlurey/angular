@@ -48,22 +48,22 @@ class ViewEmptyPropertiesComponent0 extends AppView<import1.EmptyPropertiesCompo
     parentRenderNode.append(_el_0);
     createAttr(_el_0, 'raised', '');
     _FancyButtonComponent_0_5 = import1.FancyButtonComponent();
-    _compView_0.create(_FancyButtonComponent_0_5, []);
+    _compView_0.create(_FancyButtonComponent_0_5);
     _compView_1 = ViewFancyButtonComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     _FancyButtonComponent_1_5 = import1.FancyButtonComponent();
-    _compView_1.create(_FancyButtonComponent_1_5, []);
+    _compView_1.create(_FancyButtonComponent_1_5);
     _compView_2 = ViewFancyButtonComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
     parentRenderNode.append(_el_2);
     _FancyButtonComponent_2_5 = import1.FancyButtonComponent();
-    _compView_2.create(_FancyButtonComponent_2_5, []);
+    _compView_2.create(_FancyButtonComponent_2_5);
     _compView_3 = ViewFancyButtonComponent0(this, 3);
     _el_3 = _compView_3.rootEl;
     parentRenderNode.append(_el_3);
     _FancyButtonComponent_3_5 = import1.FancyButtonComponent();
-    _compView_3.create(_FancyButtonComponent_3_5, []);
+    _compView_3.create(_FancyButtonComponent_3_5);
     init(const [], null);
     return null;
   }
@@ -107,7 +107,7 @@ class _ViewEmptyPropertiesComponentHost0 extends AppView<import1.EmptyProperties
     _compView_0 = ViewEmptyPropertiesComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _EmptyPropertiesComponent_0_5 = import1.EmptyPropertiesComponent();
-    _compView_0.create(_EmptyPropertiesComponent_0_5, projectableNodes);
+    _compView_0.createAndProject(_EmptyPropertiesComponent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _EmptyPropertiesComponent_0_5);
   }
@@ -165,7 +165,7 @@ class _ViewFancyButtonComponentHost0 extends AppView<import1.FancyButtonComponen
     _compView_0 = ViewFancyButtonComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _FancyButtonComponent_0_5 = import1.FancyButtonComponent();
-    _compView_0.create(_FancyButtonComponent_0_5, projectableNodes);
+    _compView_0.createAndProject(_FancyButtonComponent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _FancyButtonComponent_0_5);
   }

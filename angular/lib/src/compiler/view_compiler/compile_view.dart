@@ -876,11 +876,20 @@ class CompileView implements AppViewBuilder {
   }
 
   @override
-  void createAppView(AppViewReference appViewRef,
-      o.Expression componentInstance, o.Expression contentNodesArray) {
-    _createMethod.addStmt(appViewRef
-        .toReadExpr()
-        .callMethod('create', [componentInstance, contentNodesArray]).toStmt());
+  void createAppView(
+    AppViewReference appViewRef,
+    o.Expression componentInstance, [
+    o.Expression contentNodesArray,
+  ]) {
+    final appView = appViewRef.toReadExpr();
+    _createMethod.addStmt(appView
+        .callMethod(
+          contentNodesArray != null ? 'createAndProject' : 'create',
+          contentNodesArray != null
+              ? [componentInstance, contentNodesArray]
+              : [componentInstance],
+        )
+        .toStmt());
   }
 
   bool _isRootNodeOfHost(int nodeIndex) =>

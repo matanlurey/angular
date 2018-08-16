@@ -102,12 +102,9 @@ class ComponentFactory<T> {
   Type get componentType => T;
 
   /// Creates a new component.
-  ComponentRef<T> create(
-    Injector injector, [
-    List<List> projectableNodes,
-  ]) {
+  ComponentRef<T> create(Injector injector) {
     // Note: Host views don't need a declarationViewContainer!
     final hostView = _viewFactory(null, null);
-    return hostView.createHostView(injector, projectableNodes ?? const []);
+    return hostView.createHostView(injector);
   }
 }

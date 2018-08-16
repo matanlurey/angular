@@ -51,7 +51,7 @@ class _ViewDependentHost0 extends AppView<import1.Dependent> {
     _compView_0 = ViewDependent0(this, 0);
     rootEl = _compView_0.rootEl;
     _Dependent_0_5 = import1.Dependent(this.injectorGet(import1.Dependency, viewData.parentIndex));
-    _compView_0.create(_Dependent_0_5, projectableNodes);
+    _compView_0.createAndProject(_Dependent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _Dependent_0_5);
   }
@@ -96,7 +96,7 @@ class ViewDependencyWithDependentInView0 extends AppView<import1.DependencyWithD
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _Dependent_0_5 = import1.Dependent(parentView.injectorGet(import1.Dependency, viewData.parentIndex));
-    _compView_0.create(_Dependent_0_5, []);
+    _compView_0.create(_Dependent_0_5);
     init(const [], null);
     return null;
   }
@@ -127,7 +127,7 @@ class _ViewDependencyWithDependentInViewHost0 extends AppView<import1.Dependency
     _compView_0 = ViewDependencyWithDependentInView0(this, 0);
     rootEl = _compView_0.rootEl;
     _DependencyWithDependentInView_0_5 = import1.DependencyWithDependentInView();
-    _compView_0.create(_DependencyWithDependentInView_0_5, projectableNodes);
+    _compView_0.createAndProject(_DependencyWithDependentInView_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _DependencyWithDependentInView_0_5);
   }
@@ -194,7 +194,7 @@ class _ViewDependencyWithContentHost0 extends AppView<import1.DependencyWithCont
     _compView_0 = ViewDependencyWithContent0(this, 0);
     rootEl = _compView_0.rootEl;
     _DependencyWithContent_0_5 = import1.DependencyWithContent();
-    _compView_0.create(_DependencyWithContent_0_5, projectableNodes);
+    _compView_0.createAndProject(_DependencyWithContent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _DependencyWithContent_0_5);
   }
@@ -250,7 +250,7 @@ class ViewDependencyAndDependentInView0 extends AppView<import1.DependencyAndDep
     _el_1 = _compView_1.rootEl;
     _el_0.append(_el_1);
     _Dependent_1_5 = import1.Dependent(parentView.injectorGet(import1.Dependency, viewData.parentIndex));
-    _compView_1.create(_Dependent_1_5, []);
+    _compView_1.create(_Dependent_1_5);
     init(const [], null);
     return null;
   }
@@ -281,7 +281,7 @@ class _ViewDependencyAndDependentInViewHost0 extends AppView<import1.DependencyA
     _compView_0 = ViewDependencyAndDependentInView0(this, 0);
     rootEl = _compView_0.rootEl;
     _DependencyAndDependentInView_0_5 = import1.DependencyAndDependentInView();
-    _compView_0.create(_DependencyAndDependentInView_0_5, projectableNodes);
+    _compView_0.createAndProject(_DependencyAndDependentInView_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _DependencyAndDependentInView_0_5);
   }
@@ -339,7 +339,7 @@ class _ViewHasVisibilityAllHost0 extends AppView<import1.HasVisibilityAll> {
     _compView_0 = ViewHasVisibilityAll0(this, 0);
     rootEl = _compView_0.rootEl;
     _HasVisibilityAll_0_5 = import1.HasVisibilityAll();
-    _compView_0.create(_HasVisibilityAll_0_5, projectableNodes);
+    _compView_0.createAndProject(_HasVisibilityAll_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _HasVisibilityAll_0_5);
   }
@@ -405,7 +405,7 @@ class _ViewHasVisibilityLocalHost0 extends AppView<import1.HasVisibilityLocal> {
     _compView_0 = ViewHasVisibilityLocal0(this, 0);
     rootEl = _compView_0.rootEl;
     _HasVisibilityLocal_0_5 = import1.HasVisibilityLocal();
-    _compView_0.create(_HasVisibilityLocal_0_5, projectableNodes);
+    _compView_0.createAndProject(_HasVisibilityLocal_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _HasVisibilityLocal_0_5);
   }

@@ -53,7 +53,7 @@ class _ViewHostComponentNewSyntaxHost0 extends AppView<import1.HostComponentNewS
     _compView_0 = ViewHostComponentNewSyntax0(this, 0);
     rootEl = _compView_0.rootEl;
     _HostComponentNewSyntax_0_5 = import1.HostComponentNewSyntax();
-    _compView_0.create(_HostComponentNewSyntax_0_5, projectableNodes);
+    _compView_0.createAndProject(_HostComponentNewSyntax_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _HostComponentNewSyntax_0_5);
   }
@@ -101,7 +101,7 @@ class ViewUsesHostComponentWithDirective0 extends AppView<import1.UsesHostCompon
     createAttr(_el_0, 'listens-to-foo', '');
     _HostComponent_0_5 = import1.HostComponent();
     _ListensToFooEvent_0_6 = import1.ListensToFooEvent();
-    _compView_0.create(_HostComponent_0_5, []);
+    _compView_0.create(_HostComponent_0_5);
     final subscription_0 = _HostComponent_0_5.fooEvents.listen(eventHandler0(_ListensToFooEvent_0_6.onOutputFoo));
     init(const [], [subscription_0]);
     return null;
@@ -135,7 +135,7 @@ class _ViewUsesHostComponentWithDirectiveHost0 extends AppView<import1.UsesHostC
     _compView_0 = ViewUsesHostComponentWithDirective0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesHostComponentWithDirective_0_5 = import1.UsesHostComponentWithDirective();
-    _compView_0.create(_UsesHostComponentWithDirective_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesHostComponentWithDirective_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesHostComponentWithDirective_0_5);
   }
@@ -238,7 +238,7 @@ class _ViewHostComponentHost0 extends AppView<import1.HostComponent> {
     _compView_0 = ViewHostComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _HostComponent_0_5 = import1.HostComponent();
-    _compView_0.create(_HostComponent_0_5, projectableNodes);
+    _compView_0.createAndProject(_HostComponent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _HostComponent_0_5);
   }

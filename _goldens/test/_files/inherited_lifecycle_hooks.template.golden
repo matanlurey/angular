@@ -51,7 +51,7 @@ class _ViewLifecycleHooksComponentHost0 extends AppView<import1.LifecycleHooksCo
     _compView_0 = ViewLifecycleHooksComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _LifecycleHooksComponent_0_5 = import1.LifecycleHooksComponent();
-    _compView_0.create(_LifecycleHooksComponent_0_5, projectableNodes);
+    _compView_0.createAndProject(_LifecycleHooksComponent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _LifecycleHooksComponent_0_5);
   }

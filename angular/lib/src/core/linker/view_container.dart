@@ -99,11 +99,10 @@ class ViewContainer extends ComponentLoader implements ViewContainerRef {
     ComponentFactory<T> componentFactory, [
     int index = -1,
     Injector injector,
-    List<List<dynamic>> projectableNodes,
   ]) {
     var contextInjector = injector ?? parentInjector;
     var componentRef =
-        componentFactory.create(contextInjector, projectableNodes);
+        componentFactory.create(contextInjector);
     insert(componentRef.hostView, index);
     return componentRef;
   }

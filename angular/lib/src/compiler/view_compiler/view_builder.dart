@@ -202,9 +202,11 @@ class ViewBuilderVisitor implements TemplateAstVisitor<void, CompileElement> {
     if (view.component.type.isHost) {
       projectables = ViewProperties.projectableNodes;
     } else {
-      projectables = o.literalArr(compileElement.contentNodesByNgContentIndex
-          .map((nodes) => createFlatArray(nodes))
-          .toList());
+      projectables = compileElement.contentNodesByNgContentIndex.isNotEmpty
+          ? o.literalArr(compileElement.contentNodesByNgContentIndex
+              .map((nodes) => createFlatArray(nodes))
+              .toList())
+          : null;
     }
     var componentInstance = compileElement.getComponent();
     view.createAppView(compAppViewExpr, componentInstance, projectables);

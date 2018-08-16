@@ -83,7 +83,7 @@ class ViewTestContainerComponent0 extends AppView<import1.TestContainerComponent
     _el_5 = _compView_5.rootEl;
     parentRenderNode.append(_el_5);
     _NotDeferredChildComponent_5_5 = import6.NotDeferredChildComponent();
-    _compView_5.create(_NotDeferredChildComponent_5_5, []);
+    _compView_5.create(_NotDeferredChildComponent_5_5);
     init(const [], null);
     return null;
   }
@@ -141,7 +141,7 @@ class _ViewTestContainerComponent1 extends AppView<import1.TestContainerComponen
     _compView_0 = import5.viewFactory_DeferredChild1Component0(this, 0);
     _el_0 = _compView_0.rootEl;
     _DeferredChild1Component_0_5 = import6.DeferredChild1Component();
-    _compView_0.create(_DeferredChild1Component_0_5, []);
+    _compView_0.create(_DeferredChild1Component_0_5);
     init0(_el_0);
     return null;
   }
@@ -205,7 +205,7 @@ class _ViewTestContainerComponent3 extends AppView<import1.TestContainerComponen
     _compView_0 = import5.viewFactory_DeferredChild2Component0(this, 0);
     _el_0 = _compView_0.rootEl;
     _DeferredChild2Component_0_5 = import6.DeferredChild2Component();
-    _compView_0.create(_DeferredChild2Component_0_5, []);
+    _compView_0.create(_DeferredChild2Component_0_5);
     init0(_el_0);
     return null;
   }
@@ -273,7 +273,7 @@ class _ViewTestContainerComponent5 extends AppView<import1.TestContainerComponen
     _compView_0 = import5.viewFactory_DeferredChild3Component0(this, 0);
     _el_0 = _compView_0.rootEl;
     _DeferredChild3Component_0_5 = import6.DeferredChild3Component();
-    _compView_0.create(_DeferredChild3Component_0_5, []);
+    _compView_0.create(_DeferredChild3Component_0_5);
     init0(_el_0);
     return null;
   }
@@ -311,7 +311,7 @@ class _ViewTestContainerComponent6 extends AppView<import1.TestContainerComponen
     _el_0 = _compView_0.rootEl;
     _DeferredChildComponentWithoutNgContent_0_5 = import6.DeferredChildComponentWithoutNgContent();
     import4.Text _text_1 = import4.Text('Hello World');
-    _compView_0.create(_DeferredChildComponentWithoutNgContent_0_5, []);
+    _compView_0.create(_DeferredChildComponentWithoutNgContent_0_5);
     init0(_el_0);
     return null;
   }
@@ -344,7 +344,7 @@ class _ViewTestContainerComponent7 extends AppView<import1.TestContainerComponen
     _el_0 = _compView_0.rootEl;
     _DeferredChildComponentWithNgContent_0_5 = import6.DeferredChildComponentWithNgContent();
     import4.Text _text_1 = import4.Text('Hello World');
-    _compView_0.create(_DeferredChildComponentWithNgContent_0_5, [
+    _compView_0.createAndProject(_DeferredChildComponentWithNgContent_0_5, [
       [_text_1]
     ]);
     init0(_el_0);
@@ -377,7 +377,7 @@ class _ViewTestContainerComponentHost0 extends AppView<import1.TestContainerComp
     _compView_0 = ViewTestContainerComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _TestContainerComponent_0_5 = import1.TestContainerComponent();
-    _compView_0.create(_TestContainerComponent_0_5, projectableNodes);
+    _compView_0.createAndProject(_TestContainerComponent_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _TestContainerComponent_0_5);
   }

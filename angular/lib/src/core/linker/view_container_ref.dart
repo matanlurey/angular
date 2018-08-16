@@ -69,7 +69,6 @@ abstract class ViewContainerRef implements ComponentLoader {
     ComponentFactory<T> componentFactory, [
     int index = -1,
     Injector injector,
-    List<List<dynamic>> projectableNodes,
   ]);
 
   /// Inserts a View identified by a [ViewRef] into the container.

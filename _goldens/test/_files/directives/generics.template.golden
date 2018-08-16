@@ -57,7 +57,7 @@ class _ViewUntypedCompHost0 extends AppView<import1.UntypedComp> {
     _compView_0 = ViewUntypedComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UntypedComp_0_5 = import1.UntypedComp();
-    _compView_0.create(_UntypedComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UntypedComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UntypedComp_0_5);
   }
@@ -103,7 +103,7 @@ class ViewUsesUntypedComp0 extends AppView<import1.UsesUntypedComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _UntypedComp_0_5 = import1.UntypedComp();
-    _compView_0.create(_UntypedComp_0_5, []);
+    _compView_0.create(_UntypedComp_0_5);
     init(const [], null);
     return null;
   }
@@ -140,7 +140,7 @@ class _ViewUsesUntypedCompHost0 extends AppView<import1.UsesUntypedComp> {
     _compView_0 = ViewUsesUntypedComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesUntypedComp_0_5 = import1.UsesUntypedComp();
-    _compView_0.create(_UsesUntypedComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesUntypedComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesUntypedComp_0_5);
   }
@@ -198,7 +198,7 @@ class _ViewGenericCompHost0<T> extends AppView<import1.GenericComp<T>> {
     _compView_0 = ViewGenericComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _GenericComp_0_5 = import1.GenericComp();
-    _compView_0.create(_GenericComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_GenericComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _GenericComp_0_5);
   }
@@ -244,7 +244,7 @@ class ViewUsesGenericComp0 extends AppView<import1.UsesGenericComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _GenericComp_0_5 = import1.GenericComp();
-    _compView_0.create(_GenericComp_0_5, []);
+    _compView_0.create(_GenericComp_0_5);
     init(const [], null);
     return null;
   }
@@ -281,7 +281,7 @@ class _ViewUsesGenericCompHost0 extends AppView<import1.UsesGenericComp> {
     _compView_0 = ViewUsesGenericComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesGenericComp_0_5 = import1.UsesGenericComp();
-    _compView_0.create(_UsesGenericComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesGenericComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesGenericComp_0_5);
   }
@@ -339,7 +339,7 @@ class _ViewMappingComp1Host0<K, V> extends AppView<import1.MappingComp1<K, V>> {
     _compView_0 = ViewMappingComp10(this, 0);
     rootEl = _compView_0.rootEl;
     _MappingComp1_0_5 = import1.MappingComp1();
-    _compView_0.create(_MappingComp1_0_5, projectableNodes);
+    _compView_0.createAndProject(_MappingComp1_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _MappingComp1_0_5);
   }
@@ -386,7 +386,7 @@ class ViewUsesMappingComp10 extends AppView<import1.UsesMappingComp1> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _MappingComp1_0_5 = import1.MappingComp1();
-    _compView_0.create(_MappingComp1_0_5, []);
+    _compView_0.create(_MappingComp1_0_5);
     init(const [], null);
     return null;
   }
@@ -428,7 +428,7 @@ class _ViewUsesMappingComp1Host0 extends AppView<import1.UsesMappingComp1> {
     _compView_0 = ViewUsesMappingComp10(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesMappingComp1_0_5 = import1.UsesMappingComp1();
-    _compView_0.create(_UsesMappingComp1_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesMappingComp1_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesMappingComp1_0_5);
   }
@@ -486,7 +486,7 @@ class _ViewMappingComp2Host0<K, V> extends AppView<import1.MappingComp2<K, V>> {
     _compView_0 = ViewMappingComp20(this, 0);
     rootEl = _compView_0.rootEl;
     _MappingComp2_0_5 = import1.MappingComp2();
-    _compView_0.create(_MappingComp2_0_5, projectableNodes);
+    _compView_0.createAndProject(_MappingComp2_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _MappingComp2_0_5);
   }
@@ -532,7 +532,7 @@ class ViewUsesMappingComp20 extends AppView<import1.UsesMappingComp2> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _MappingComp2_0_5 = import1.MappingComp2();
-    _compView_0.create(_MappingComp2_0_5, []);
+    _compView_0.create(_MappingComp2_0_5);
     init(const [], null);
     return null;
   }
@@ -569,7 +569,7 @@ class _ViewUsesMappingComp2Host0 extends AppView<import1.UsesMappingComp2> {
     _compView_0 = ViewUsesMappingComp20(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesMappingComp2_0_5 = import1.UsesMappingComp2();
-    _compView_0.create(_UsesMappingComp2_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesMappingComp2_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesMappingComp2_0_5);
   }
@@ -627,7 +627,7 @@ class _ViewBoundCompHost0 extends AppView<import1.BoundComp> {
     _compView_0 = ViewBoundComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _BoundComp_0_5 = import1.BoundComp();
-    _compView_0.create(_BoundComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_BoundComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _BoundComp_0_5);
   }
@@ -673,7 +673,7 @@ class ViewUsesBoundCompWithBounds0 extends AppView<import1.UsesBoundCompWithBoun
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _BoundComp_0_5 = import1.BoundComp();
-    _compView_0.create(_BoundComp_0_5, []);
+    _compView_0.create(_BoundComp_0_5);
     init(const [], null);
     return null;
   }
@@ -710,7 +710,7 @@ class _ViewUsesBoundCompWithBoundsHost0 extends AppView<import1.UsesBoundCompWit
     _compView_0 = ViewUsesBoundCompWithBounds0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesBoundCompWithBounds_0_5 = import1.UsesBoundCompWithBounds();
-    _compView_0.create(_UsesBoundCompWithBounds_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesBoundCompWithBounds_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesBoundCompWithBounds_0_5);
   }
@@ -756,7 +756,7 @@ class ViewUsesBoundComp0 extends AppView<import1.UsesBoundComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _BoundComp_0_5 = import1.BoundComp();
-    _compView_0.create(_BoundComp_0_5, []);
+    _compView_0.create(_BoundComp_0_5);
     init(const [], null);
     return null;
   }
@@ -793,7 +793,7 @@ class _ViewUsesBoundCompHost0 extends AppView<import1.UsesBoundComp> {
     _compView_0 = ViewUsesBoundComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesBoundComp_0_5 = import1.UsesBoundComp();
-    _compView_0.create(_UsesBoundComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesBoundComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesBoundComp_0_5);
   }
@@ -851,7 +851,7 @@ class _ViewSelfBoundCompHost0 extends AppView<import1.SelfBoundComp> {
     _compView_0 = ViewSelfBoundComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _SelfBoundComp_0_5 = import1.SelfBoundComp();
-    _compView_0.create(_SelfBoundComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_SelfBoundComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _SelfBoundComp_0_5);
   }
@@ -898,7 +898,7 @@ class ViewUsesSelfBoundComp0 extends AppView<import1.UsesSelfBoundComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _SelfBoundComp_0_5 = import1.SelfBoundComp();
-    _compView_0.create(_SelfBoundComp_0_5, []);
+    _compView_0.create(_SelfBoundComp_0_5);
     init(const [], null);
     return null;
   }
@@ -940,7 +940,7 @@ class _ViewUsesSelfBoundCompHost0 extends AppView<import1.UsesSelfBoundComp> {
     _compView_0 = ViewUsesSelfBoundComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesSelfBoundComp_0_5 = import1.UsesSelfBoundComp();
-    _compView_0.create(_UsesSelfBoundComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesSelfBoundComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesSelfBoundComp_0_5);
   }
@@ -998,7 +998,7 @@ class _ViewRecursiveCompHost0 extends AppView<import1.RecursiveComp> {
     _compView_0 = ViewRecursiveComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _RecursiveComp_0_5 = import1.RecursiveComp();
-    _compView_0.create(_RecursiveComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_RecursiveComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _RecursiveComp_0_5);
   }
@@ -1044,7 +1044,7 @@ class ViewUsesRecursiveComp0 extends AppView<import1.UsesRecursiveComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _RecursiveComp_0_5 = import1.RecursiveComp();
-    _compView_0.create(_RecursiveComp_0_5, []);
+    _compView_0.create(_RecursiveComp_0_5);
     init(const [], null);
     return null;
   }
@@ -1081,7 +1081,7 @@ class _ViewUsesRecursiveCompHost0 extends AppView<import1.UsesRecursiveComp> {
     _compView_0 = ViewUsesRecursiveComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesRecursiveComp_0_5 = import1.UsesRecursiveComp();
-    _compView_0.create(_UsesRecursiveComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesRecursiveComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesRecursiveComp_0_5);
   }
@@ -1139,7 +1139,7 @@ class _ViewFunctionTypeCompHost0<F> extends AppView<import1.FunctionTypeComp<F>>
     _compView_0 = ViewFunctionTypeComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _FunctionTypeComp_0_5 = import1.FunctionTypeComp();
-    _compView_0.create(_FunctionTypeComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_FunctionTypeComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _FunctionTypeComp_0_5);
   }
@@ -1185,7 +1185,7 @@ class ViewUsesFunctionTypeComp0 extends AppView<import1.UsesFunctionTypeComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _FunctionTypeComp_0_5 = import1.FunctionTypeComp();
-    _compView_0.create(_FunctionTypeComp_0_5, []);
+    _compView_0.create(_FunctionTypeComp_0_5);
     init(const [], null);
     return null;
   }
@@ -1222,7 +1222,7 @@ class _ViewUsesFunctionTypeCompHost0 extends AppView<import1.UsesFunctionTypeCom
     _compView_0 = ViewUsesFunctionTypeComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesFunctionTypeComp_0_5 = import1.UsesFunctionTypeComp();
-    _compView_0.create(_UsesFunctionTypeComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesFunctionTypeComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesFunctionTypeComp_0_5);
   }
@@ -1275,12 +1275,12 @@ class ViewNestedParentComp0<T> extends AppView<import1.NestedParentComp<T>> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _NestedChildComp_0_5 = import1.NestedChildComp();
-    _compView_0.create(_NestedChildComp_0_5, []);
+    _compView_0.create(_NestedChildComp_0_5);
     _compView_1 = ViewNestedChildComp0(this, 1);
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     _NestedChildComp_1_5 = import1.NestedChildComp();
-    _compView_1.create(_NestedChildComp_1_5, []);
+    _compView_1.create(_NestedChildComp_1_5);
     final _anchor_2 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_2);
     _appEl_2 = ViewContainer(2, null, this, _anchor_2);
@@ -1343,7 +1343,7 @@ class _ViewNestedParentComp1<T> extends AppView<import1.NestedParentComp<T>> {
     _compView_0 = ViewNestedChildComp0(this, 0);
     _el_0 = _compView_0.rootEl;
     _NestedChildComp_0_5 = import1.NestedChildComp();
-    _compView_0.create(_NestedChildComp_0_5, []);
+    _compView_0.create(_NestedChildComp_0_5);
     init0(_el_0);
     return null;
   }
@@ -1380,7 +1380,7 @@ class _ViewNestedParentCompHost0<T> extends AppView<import1.NestedParentComp<T>>
     _compView_0 = ViewNestedParentComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _NestedParentComp_0_5 = import1.NestedParentComp();
-    _compView_0.create(_NestedParentComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_NestedParentComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _NestedParentComp_0_5);
   }
@@ -1438,7 +1438,7 @@ class _ViewNestedChildCompHost0<T> extends AppView<import1.NestedChildComp<T>> {
     _compView_0 = ViewNestedChildComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _NestedChildComp_0_5 = import1.NestedChildComp();
-    _compView_0.create(_NestedChildComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_NestedChildComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _NestedChildComp_0_5);
   }
@@ -1486,7 +1486,7 @@ class ViewUsesNestedParentComp0 extends AppView<import1.UsesNestedParentComp> {
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _NestedParentComp_0_5 = import1.NestedParentComp();
-    _compView_0.create(_NestedParentComp_0_5, []);
+    _compView_0.create(_NestedParentComp_0_5);
     init(const [], null);
     return null;
   }
@@ -1533,7 +1533,7 @@ class _ViewUsesNestedParentCompHost0 extends AppView<import1.UsesNestedParentCom
     _compView_0 = ViewUsesNestedParentComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesNestedParentComp_0_5 = import1.UsesNestedParentComp();
-    _compView_0.create(_UsesNestedParentComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesNestedParentComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesNestedParentComp_0_5);
   }
@@ -1583,12 +1583,12 @@ class ViewUsesMultipleTypesComp0 extends AppView<import1.UsesMultipleTypesComp> 
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     _GenericComp_0_5 = import1.GenericComp();
-    _compView_0.create(_GenericComp_0_5, []);
+    _compView_0.create(_GenericComp_0_5);
     _compView_1 = ViewGenericComp0(this, 1);
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     _GenericComp_1_5 = import1.GenericComp();
-    _compView_1.create(_GenericComp_1_5, []);
+    _compView_1.create(_GenericComp_1_5);
     init(const [], null);
     return null;
   }
@@ -1632,7 +1632,7 @@ class _ViewUsesMultipleTypesCompHost0 extends AppView<import1.UsesMultipleTypesC
     _compView_0 = ViewUsesMultipleTypesComp0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesMultipleTypesComp_0_5 = import1.UsesMultipleTypesComp();
-    _compView_0.create(_UsesMultipleTypesComp_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesMultipleTypesComp_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesMultipleTypesComp_0_5);
   }
@@ -1708,7 +1708,7 @@ class _ViewUsesGenericChangeDetectorHost0 extends AppView<import1.UsesGenericCha
     _compView_0 = ViewUsesGenericChangeDetector0(this, 0);
     rootEl = _compView_0.rootEl;
     _UsesGenericChangeDetector_0_5 = import1.UsesGenericChangeDetector();
-    _compView_0.create(_UsesGenericChangeDetector_0_5, projectableNodes);
+    _compView_0.createAndProject(_UsesGenericChangeDetector_0_5, projectableNodes);
     init0(rootEl);
     return ComponentRef(0, this, rootEl, _UsesGenericChangeDetector_0_5);
   }
